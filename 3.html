@@ -20,21 +20,25 @@
       <h1><a href="1.html">No.5 변준형</a></h1>
     <br>
       <div id="homeawaysel">
-        <input type="button" value="away" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        document.querySelector('body').style.color='black';
-        document.querySelector('a').style.color='black';
-        document.querySelector('ol').style.borderColor='red';
-        document.querySelector('#withbutton').style.borderColor='red';
-        document.querySelector('#grid').style.borderColor='red';
-        ">
         <input type="button" value="home" onclick="
-        document.querySelector('body').style.backgroundColor='red';
-        document.querySelector('body').style.color='white';
-        document.querySelector('a').style.color='white';
-        document.querySelector('ol').style.borderColor='white';
-        document.querySelector('#withbutton').style.borderColor='white';
-        document.querySelector('#grid').style.borderColor='white';
+          var target = document.querySelector('body');
+          if(this.value === 'home'){
+            target.style.backgroundColor='red';
+            target.style.color='white';
+            document.querySelector('a').style.color='white';
+            document.querySelector('ol').style.borderColor='white';
+            document.querySelector('#withbutton').style.borderColor='white';
+            document.querySelector('#grid').style.borderColor='white';
+            this.value='away';
+          }else{
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            document.querySelector('a').style.color='black';
+            document.querySelector('ol').style.borderColor='red';
+            document.querySelector('#withbutton').style.borderColor='red';
+            document.querySelector('#grid').style.borderColor='red';
+            this.value='home';
+          }
         ">
       </div>
   </div>
