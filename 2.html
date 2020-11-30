@@ -15,7 +15,29 @@
   </script>
 </head>
 <body>
-  <h1><a href="1.html">No.5 변준형</a></h1>
+  <div id="withbutton">
+      <img src="안양KGC인삼공사 마크.jpg" width="80">
+      <h1><a href="1.html">No.5 변준형</a></h1>
+    <br>
+      <div id="homeawaysel">
+        <input type="button" value="away" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('a').style.color='black';
+        document.querySelector('ol').style.borderColor='red';
+        document.querySelector('#withbutton').style.borderColor='red';
+        document.querySelector('#grid').style.borderColor='red';
+        ">
+        <input type="button" value="home" onclick="
+        document.querySelector('body').style.backgroundColor='red';
+        document.querySelector('body').style.color='white';
+        document.querySelector('a').style.color='white';
+        document.querySelector('ol').style.borderColor='white';
+        document.querySelector('#withbutton').style.borderColor='white';
+        document.querySelector('#grid').style.borderColor='white';
+        ">
+      </div>
+  </div>
   <div id="grid">
     <ol>
       <li><a href="2.html">출생</a></li>
@@ -24,7 +46,7 @@
       <li><a href="5.html">경력</a></li>
       <li><a href="6.html">하이라이트 영상</a></li>
     </ol>
-    <div id="grid2">
+  <div id="grid2">
       <h3>출생</h3>
       1996년 3월 11일
     </div>

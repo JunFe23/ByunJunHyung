@@ -5,12 +5,22 @@ a{
   color:black;
   /*text-decoration: none;*/
 }
-h1 {
-  font-size:50px;
-  text-align: center;
+#withbutton{
   border-bottom:3px solid red;
   margin:0;
   padding: 30px;
+  padding-bottom:5px;
+}
+  #withbutton h1{
+    font-size:50px;
+    text-align: center;
+  }
+  #withbutton img{
+    float: right;
+    margin-right:15px;
+  }
+#homeawaysel{
+  text-align: right;
 }
 ol{
   border-right: 2px solid red;
