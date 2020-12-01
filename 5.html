@@ -12,8 +12,40 @@
     gtag('js', new Date());
 
     gtag('config', 'G-W18MXLPZYY');
+
+    function HomeAwayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'home'){
+        target.style.backgroundColor='red';
+        target.style.color='powderblue';
+        document.querySelector('ol').style.borderColor='powderblue';
+        document.querySelector('#withbutton').style.borderColor='powderblue';
+        document.querySelector('#grid').style.borderColor='powderblue';
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+          }
+        self.value='away';
+      }else{
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        document.querySelector('ol').style.borderColor='red';
+        document.querySelector('#withbutton').style.borderColor='red';
+        document.querySelector('#grid').style.borderColor='red';
+          var alist = document.querySelectorAll('a');
+          var i = 0;
+          while(i < alist.length){
+            alist[i].style.color = 'black';
+            i = i + 1;
+          }
+        self.value='home';
+      }
+    }
   </script>
 </head>
+
 <body>
   <div id="withbutton">
       <img src="안양KGC인삼공사 마크.jpg" width="80">
@@ -21,24 +53,7 @@
     <br>
       <div id="homeawaysel">
         <input type="button" value="home" onclick="
-          var target = document.querySelector('body');
-          if(this.value === 'home'){
-            target.style.backgroundColor='red';
-            target.style.color='white';
-            document.querySelector('a').style.color='white';
-            document.querySelector('ol').style.borderColor='white';
-            document.querySelector('#withbutton').style.borderColor='white';
-            document.querySelector('#grid').style.borderColor='white';
-            this.value='away';
-          }else{
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            document.querySelector('a').style.color='black';
-            document.querySelector('ol').style.borderColor='red';
-            document.querySelector('#withbutton').style.borderColor='red';
-            document.querySelector('#grid').style.borderColor='red';
-            this.value='home';
-          }
+          HomeAwayHandler(this);
         ">
       </div>
   </div>
