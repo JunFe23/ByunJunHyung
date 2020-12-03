@@ -1,54 +1,27 @@
 <!doctype html>
 <html>
 <head>
-  <title>하이라이트 영상</title>
+  <title>Rookie - Byun Jun Hyung</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W18MXLPZYY"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-W18MXLPZYY');
-
-    function HomeAwayHandler(self){
-      var target = document.querySelector('body');
-      if(self.value === 'home'){
-        target.style.backgroundColor='red';
-        target.style.color='powderblue';
-        document.querySelector('ol').style.borderColor='powderblue';
-        document.querySelector('#withbutton').style.borderColor='powderblue';
-        document.querySelector('#grid').style.borderColor='powderblue';
-          var alist = document.querySelectorAll('a');
-          var i = 0;
-          while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            i = i + 1;
-          }
-        self.value='away';
-      }else{
-        target.style.backgroundColor='white';
-        target.style.color='black';
-        document.querySelector('ol').style.borderColor='red';
-        document.querySelector('#withbutton').style.borderColor='red';
-        document.querySelector('#grid').style.borderColor='red';
-          var alist = document.querySelectorAll('a');
-          var i = 0;
-          while(i < alist.length){
-            alist[i].style.color = 'black';
-            i = i + 1;
-          }
-        self.value='home';
-      }
-    }
   </script>
+  <script src="colors.js"></script>
 </head>
 
 <body>
   <div id="withbutton">
-      <img src="안양KGC인삼공사 마크.jpg" width="80">
+      <img onclick="location.href='LoginShapeVer.html'"
+      style="cursor:pointer;" src="안양KGC인삼공사 마크.jpg" width="80" >
       <h1><a href="1.html">No.5 변준형</a></h1>
     <br>
       <div id="homeawaysel">

@@ -1,12 +1,13 @@
 body{
   margin:0;
+  background: #95a5a6;
 }
 a{
   color:black;
   /*text-decoration: none;*/
 }
 #withbutton{
-  border-bottom:3px solid red;
+  border-bottom:3px solid #c0392b;
   margin:0;
   padding: 30px;
   padding-bottom:5px;
@@ -23,7 +24,7 @@ a{
   text-align: right;
 }
 ol{
-  border-right: 2px solid red;
+  border-right: 2px solid #c0392b;
   width:150px;
   margin:0px;
   padding-top:15px;
@@ -32,7 +33,7 @@ ol{
 #grid{
   display:grid;
   grid-template-columns: 150px 1fr;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #c0392b;
 }
 #grid2{
   padding-left: 50px;
@@ -47,7 +48,7 @@ ol{
   }
   ol{
     border-right: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #c0392b;
     padding-right: 800px;
     padding-bottom: 15px;
     }
