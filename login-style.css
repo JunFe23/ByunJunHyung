@@ -12,14 +12,14 @@ body{
   height: 250px;
   margin-right: auto;
   margin-left: auto;
+  flex: none;
 }
 .box{
   width: 300px;
   padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  position: static;
+  margin-right: auto;
+  margin-left: auto;
   background: #c0392b;
   text-align: center;
   border-radius: 24px;
