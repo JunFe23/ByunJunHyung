@@ -34,19 +34,19 @@ var Body = {
 
 function HomeAwayHandler(self){
   var target = document.querySelector('body');
-  if(self.value === 'home'){
-    Body.SetBackgroundColor('#c0392b');
-    Body.SetColor('#95a5a6');
-    Border.SetColor('#95a5a6')
-    Links.SetColor('#95a5a6');
-
-    self.value = 'away';
-  }else{
+  if(self.value === 'away'){
     Body.SetBackgroundColor('#95a5a6');
     Body.SetColor('black');
     Border.SetColor('#c0392b');
     Links.SetColor('black');
-
     self.value = 'home';
+  }else{
+    Body.SetBackgroundColor('#c0392b');
+    Body.SetColor('#95a5a6');
+    Border.SetColor('#95a5a6')
+    Links.SetColor('#95a5a6');
+    self.value = 'away';
   }
 }
+/*#c0392b 빨
+#95a5a6 회*/
